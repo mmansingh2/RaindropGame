@@ -1,15 +1,15 @@
- class Raindrop {
+  class Raindrop { //new class
   PVector loc, vel, a;
   float diam;
 
-  Raindrop(float x, float y) {
+  Raindrop(float x, float y) { //constructor
     loc = new PVector(x, y);  
     vel = new PVector(.05, .06);
     a= new PVector(.2, .3);
     diam = 40;
   }
 
-  void display() {
+  void display() { //methods
     fill(0,0,255);
     ellipse(loc.x, loc.y, diam, diam);
   }
@@ -35,11 +35,11 @@
   }
 }
 
-class Catcher {
+class Catcher { //new class
   PVector lok;
   float wid, hei;
 
-  Catcher(float x, float y) {
+  Catcher(float x, float y) { //constructor
    
     x = mouseX;
     y = mouseY;
@@ -48,7 +48,7 @@ class Catcher {
     lok = new PVector(mouseX, mouseY);
   }
 
-  void display(float x, float y) {
+  void display(float x, float y) { //methods
     fill(255);
     rect(x, y, wid, hei);
   }
@@ -57,5 +57,6 @@ class Catcher {
     lok.set(mouseX,mouseY);
     
   }
+  
    
   }
