@@ -1,16 +1,17 @@
-  class Raindrop { //new class
-  PVector loc, vel, a;
+class Raindrop { //new class
+  PVector loc, vel, a; //declare Pvectors, floats, and int
   float diam;
+  int t;
 
   Raindrop(float x, float y) { //constructor
-    loc = new PVector(x, y);  
+    loc = new PVector(x, y);  //initialize variables
     vel = new PVector(.05, .06);
     a= new PVector(.2, .3);
-    diam = 40;
+    diam = 26;
   }
 
   void display() { //methods
-    fill(0,0,255);
+    fill(0,0,255); //blue
     ellipse(loc.x, loc.y, diam, diam);
   }
 
@@ -53,8 +54,8 @@ class Catcher { //new class
     rect(x, y, wid, hei);
   }
   
-  void pos(){
-    lok.set(mouseX,mouseY);
+void pos(){
+  lok.set(mouseX,mouseY);
     
   }
   
